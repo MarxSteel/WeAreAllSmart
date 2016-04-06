@@ -26,6 +26,7 @@ void loop()
   cmMsec = ultrasonic.convert(microsec, Ultrasonic::CM);
   //Exibe informacoes no serial monitor
   Serial.print("Distancia em cm: ");
+  //Tempo de ativação
   Serial.println(cmMsec);
   if(cmMsec <= 10){
     digitalWrite(7, HIGH);
